@@ -1,1 +1,1 @@
-# dsi321
+# Project DSI321: Real-Time Data Pipeline with Visualization
