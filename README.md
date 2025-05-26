@@ -158,11 +158,29 @@ python deploy_ml.py
 
 ```
 .
-├── data/              # Parquet files, schema, QA notebook
-├── pipeline/          # Ingestion, ARIMA, and Prefect flows
-├── visualization/     # Streamlit dashboard
-├── prefect/           # Dockerfiles & configs for services
-├── docker-compose.yml # Compose setup
-└── README.md          # This file
+├── data/
+│   ├── data.parquet/year=2025/month=5/day=XX/hour=XX/
+│   ├── SCHEMA.md
+│   └── check_data_quality.ipynb
+├── img/
+│   └── dashboard_demo.png
+├── pipeline/
+│   ├── bangkok_districts.geojson
+│   ├── getdata.py
+│   ├── forecasting.py
+│   ├── deploy.py
+│   ├── deploy_ml.py
+│   └── upload.py
+├── prefect/
+│   ├── Dockerfile.jupyter
+│   ├── Dockerfile.prefect-worker
+│   ├── requirements.txt
+│   └── wait-for-server.sh
+├── visualization/
+│   ├── .streamlit/config.toml
+│   └── app.py
+├── .gitignore
+├── README.md
+└── docker-compose.yml
 ```
 
